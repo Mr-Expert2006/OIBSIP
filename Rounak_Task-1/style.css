@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #221f36;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 8%;
+    background: #3b2a7d;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+/* IMAGE SECTION */
+.hero-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* OUTER CIRCLE */
+.image-circle{
+    width: 380px;
+    height: 380px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;   
+}
+
+/* IMAGE INSIDE (FIXED) */
+.image-circle img{
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.image-circle img:hover{
+    transform: scale(1.03);
+}
